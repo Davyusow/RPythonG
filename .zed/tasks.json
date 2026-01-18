@@ -1,0 +1,9 @@
+[
+    {
+        "label": "Rodar Projeto",
+        "command": "python -m src.game",
+        "allow_concurrent_runs": true,
+        "show_summary": false,
+        "show_command": false
+    },
+]
