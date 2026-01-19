@@ -12,5 +12,6 @@ enemys = [
 ]
 
 for inimigo in enemys :
+    while inimigo.vida > 0:
         player.atacar(inimigo)
         status_batalha(player, inimigo)
