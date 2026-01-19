@@ -7,6 +7,7 @@ class Inimigo:
 
     def __init__(self, nome: str = "Inimigo", nivel : int = 1):
         self.nome = nome
+        self.nivel = nivel
         self.vida_max += int(nivel*1.5)
         self.vida = self.vida_max
         self.dano += int(nivel*1.5)
