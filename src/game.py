@@ -1,4 +1,3 @@
-from src.model import enemy
 from src.model.enemy import Inimigo
 from src.model.player import Jogador
 from src.view.status import status_batalha
@@ -14,4 +13,5 @@ enemys = [
 for inimigo in enemys :
     while inimigo.vida > 0:
         player.atacar(inimigo)
+        print(f"Vida máxima do jogador: {player.vida_max}")
         status_batalha(player, inimigo)
