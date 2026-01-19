@@ -14,14 +14,9 @@ class Jogador:
     def __init__(self, nome: str = "jogador"):
         self.nome = nome
 
-    def resumo_turno(self, alvo : Inimigo) -> None:
-        print(f"Vida de {self.nome}: {self.vida}")
-        print(f"Vida de {alvo.nome}: {alvo.vida}")
-
     def atacar(self, alvo: Inimigo) -> None:
         print(f"{self.nome} ataca {alvo.nome} causando {self.dano} de dano!")
         alvo.vida -= self.dano
-        self.resumo_turno(alvo)
 
     def subir_de_nivel(self) -> None:
         self.nivel += 1
