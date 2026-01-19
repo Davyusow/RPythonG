@@ -27,7 +27,7 @@ class Jogador:
     def subir_de_nivel(self) -> None:
         print("O jogado subiu de nível!")
         self.nivel += 1
-        self.vida_max *= int(1.2)
+        self.vida_max = int(self.vida_max*1.2)
         self.vida = self.vida_max  # Cura o jogador após subir de nível
         self.dano = int(self.dano * 1.5)
         self.exp -= self.prox_nivel
