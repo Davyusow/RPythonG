@@ -14,8 +14,10 @@ class Inimigo:
         self.dano += int(nivel*1.5)
         self.exp += int(nivel*1.5)
 
-    def atacar(self) -> None:
+    def atacar(self, vida : int) -> int:
         print(f"{self.nome} ataca, causando {self.dano} de dano!")
+        return vida - self.dano
+
 
     def atualizar(self) -> None:
         if self.vida <= 0:

@@ -13,5 +13,5 @@ enemys = [
 for inimigo in enemys :
     while inimigo.vida > 0:
         player.atacar(inimigo)
-        print(f"Vida máxima do jogador: {player.vida_max}")
+        player.vida = inimigo.atacar(player.vida)
         status_batalha(player, inimigo)
