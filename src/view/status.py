@@ -10,3 +10,8 @@ def status_batalha(jogador: Jogador, inimigo: Inimigo) -> None:
     print(f"Vida: {jogador.vida}")
     print(f"Dano: {jogador.dano}")
     print("#===========================================#")
+    print(f"Inimigo: {inimigo.nome}")
+    print(f"Nível: {inimigo.nivel}")
+    print(f"Vida: {inimigo.vida}")
+    print(f"Dano: {inimigo.dano}")
+    print("#===========================================#")
